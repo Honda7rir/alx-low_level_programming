@@ -1,19 +1,17 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * print_alphabet - Entry point
- * Description - Prints the alphabet in lowercase
- * Return: void
+ * print_alphabet - Prints the alphabet in lowercase.
+ *
+ * Return: Always 0 (Success)
  */
-
 void print_alphabet(void)
 {
-	char c = 'a';
+	int i;
 
-	while (c <= 'z')
+	for (i = 97; i <= 122; i++)
 	{
-		putchar(c);
-		c++;
+		_putchar(i);
 	}
-	putchar('\n');
+	_putchar('\n');
 }
