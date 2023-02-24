@@ -1,33 +1,16 @@
-#include <stdlib.h>
-#include <time.h>
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main -Entry point
- * Description: Positive anything is better than negative nothing
- * Return: 0
- */
+* main - tests function that prints if integer is positive or negative
+* Return: 0
+*/
 
 int main(void)
 {
-        int n;
+        int i;
 
-        srand(time(0));
-        n = rand() - RAND_MAX / 2;
-
-        printf("%d ", n);
-        if (n > 0)
-        {
-                printf("is positive\n");
-        }
-        else if (n == 0)
-        {
-                printf("is zero\n");
-        }
-        else
-        {
-                printf("is negative\n");
-        }
+        i = 0;
+        positive_or_negative(i);
 
         return (0);
 }
