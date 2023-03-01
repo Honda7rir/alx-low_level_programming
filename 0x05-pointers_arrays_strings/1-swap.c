@@ -1,13 +1,18 @@
 #include "main.h"
 #include <stdio.h>
 
+void swap_int(int a, int b);
+
+int main ()
+{
+	int a = 98;
+	int b = 42;
+
+	swap_int(a, b);
+}
+
 void swap_int(int a, int b)
 {
-	int a = 11;
-	int b = 12;
-	int temp;
-
-	temp = a;
 	a = b;
-	b = temp;
+	b = a;
 }
